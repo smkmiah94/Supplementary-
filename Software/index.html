@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,100 +20,52 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <span class="site-heading-upper text-primary mb-3">Bradford University</span>
-      <span class="site-heading-lower">Placement Portal</span>
+        <span class="site-heading-lower">Placement Portal</span>
     </h1>
+<div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1" id="form_container">
+                            <img src="img/login.png">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="cvupload.html">CV Upload Page</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="feedback.html">Feedback</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-      
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/Menu.jpg" alt="">
-          <div class="intro-text left-0 text-center bg-faded p-4 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Your Future</span>
-              <span class="section-heading-lower">It's Worth it</span>
-            </h2>
-            <p class="mb-3"> 
-            </p>
-              
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="https://www.bradford.ac.uk/external/">Visit Us Today!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <input type="button" class="btn2" value="Student Login" onclick="relocate_student()">
 
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Our Promise</span>
-                <span class="section-heading-lower">To You</span>
-              </h2>
-              <p class="mb-0"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!-- twitter -->
-<figure class="fir-image-figure">
+    <script>
+        function relocate_student() {
+            location.href = "login.php";
+        }
+    </script>
+    <input type="button" class="btn2" value="Dont have an account ? Register" onclick="relocate_studentregister()">
 
-  <a class="fir-imageover" rel="noopener" target="_blank" href="https://twitter.com/UniofBradford">
-    <img class="fir-author-image fir-clickcircle" src="https://pbs.twimg.com/profile_images/880023407605280769/NgvZtaF5_400x400.jpg" alt="David East - Author">
-    <div class="fir-imageover-color"></div>
-    <img class="fir-imageover-image fir-clickcircle" src="https://fir-rollup.firebaseapp.com/twitter-logo.png" />
-  </a>
+    <script>
+        function relocate_studentregister() {
+            location.href = "form.php";
+        }
+    </script>
+        <br>
+    <br>
+       <input type="button" class="btn2" value="Admin Login" onclick="relocate_adminlogin()">
 
-  <figcaption>
-    <div class="fig-author-figure-title">University Of Bradford</div>
-    <div class="fig-author-figure-title">Official Twitter</div>
-  </figcaption>
-</figure>
-    <footer class="footer text-faded text-center py-5">
-      <div class="container">
-        <p class="m-0 small">Copyright &copy;Bradford University Placement Portal 2018</p>
-      </div>
-    </footer>
+    <script>
+        function relocate_adminlogin() {
+            location.href = "adminlogin.php";
+        }
+    </script>
+               <input type="button" class="btn2" value="Admin Register" onclick="relocate_adminregister()">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      
-
-  </body>
+    <script>
+        function relocate_adminregister() {
+            location.href = "adminform.php";
+        }
+    </script>        
+</div>
+    </div>
+	</div>
+</body>
 
 </html>

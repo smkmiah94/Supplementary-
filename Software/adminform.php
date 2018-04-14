@@ -3,7 +3,7 @@ session_start();
 $_SESSION['message'] = '';
 
 
-$mysqli = new mysqli("lamp.scim.brad.ac.uk", "dkhan5", "Nosesabe10", "dkhan5");
+$mysqli = new mysqli("lamp.scim.brad.ac.uk", "sahme185", "P4sswordaa", "sahme185");
 
 
 //the form has been submitted with post
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //if the query is successsful, redirect to welcome.php page, done!
                 if ($mysqli->query($sql) === true){
                     $_SESSION['message'] = "Registration succesful! Added $username to the database!";
-                    header("location: form.php");
+                    header("location: adminform.php");
                 }
                 else {
                     $_SESSION['message'] = 'User could not be added to the database!';
@@ -78,9 +78,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="col-md-5 col-md-offset-1" id="form_container">
                       <img src="img/login.png">
-    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
+    <form class="form" action="adminform.php" method="post" enctype="multipart/form-data" autocomplete="off">
       <div class="alert alert-error"><?= $_SESSION['message'] ?></div>
-      <input type="text" placeholder="UOB Number*" name="username" required />
+      <input type="text" placeholder="Admin ID*" name="username" required />
       <input type="email" placeholder="Email" name="email" required />
       <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
       <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <script>
 function relocate_login()
 {
-     location.href = "login.php";
+     location.href = "adminlogin.php";
 } 
 </script>     
        </form>
